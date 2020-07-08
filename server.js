@@ -45,10 +45,10 @@ app.post("/messages", function (req, res) {
 });
 
 //shows last 10 messages
-app.get("/messages/latest", (req, res) => {
-  const latestMessages = messages.slice(messages.length - 10, messages.length);
-  res.send(latestMessages);
-});
+// app.get("/messages/latest", (req, res) => {
+//   const latestMessages = messages.slice(messages.length - 10, messages.length);
+//   res.send(latestMessages);
+// });
 
 //deletes a message by Id
 app.delete("/messages/:id", function (req, res) {
