@@ -40,15 +40,15 @@ app.post("/messages", function (req, res) {
     messages.push(newMessage);
     res.send({ success: true, newMessage });
   } else {
-    response.send(400, "Message could not send !");
+    res.send(400, "Message could not send !");
   }
 });
 
-//shows last 10 messages
-// app.get("/messages/latest", (req, res) => {
-//   const latestMessages = messages.slice(messages.length - 10, messages.length);
-//   res.send(latestMessages);
-// });
+// shows last 10 messages
+app.get("/messages/latest", (req, res) => {
+  const latestMessages = messages.slice(messages.length - 10, messages.length);
+  res.send(latestMessages);
+});
 
 //deletes a message by Id
 app.delete("/messages/:id", function (req, res) {
