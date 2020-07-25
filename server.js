@@ -1,5 +1,6 @@
 const dotenv = require("dotenv");
 const express = require("express");
+const cors = require("cors");
 const mongodb = require("mongodb");
 const mongoOptions = { useUnifiedTopology: true };
 
@@ -7,7 +8,7 @@ dotenv.config();
 
 const app = express();
 app.use(express.json());
-
+app.use(cors());
 const port = process.env.PORT || 3000;
 
 const uri = process.env.DATABASE_URI;
