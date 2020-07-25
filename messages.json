@@ -11,7 +11,7 @@
   },
   {
     "id": 2,
-    "from": "Yat",
+    "from": "Ally",
     "text": "Welcome to CYF chat system!"
   },
   {
@@ -21,12 +21,12 @@
   },
   {
     "id": 4,
-    "from": "Burak",
+    "from": "James",
     "text": "Thank you"
   },
   {
     "id": 5,
-    "from": "Yat",
+    "from": "Carl",
     "text": "Welcome to CYF chat system!"
   }
 ]
